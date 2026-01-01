@@ -1,7 +1,7 @@
 import sys
 from random import choice
 
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 window_titles = [
     "My App",

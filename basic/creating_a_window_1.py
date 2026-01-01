@@ -1,7 +1,7 @@
 # only needed for access to command line arguments
 import sys
 
-from PyQt6.QtWidgets import QApplication, QWidget
+from PySide6.QtWidgets import QApplication, QWidget
 
 # only one QApplication instance per application
 # pass in sys.argv to allow command line arguments in app
