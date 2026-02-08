@@ -60,10 +60,10 @@ class MainWindow(QMainWindow):
         self.query = QSqlQuery(db=db)
 
         self.query.prepare(
-            "SELECT Name, Composer, Album.Title FROM Track"
-            "INNER JOIN Album ON Track.AlbumId = Album.AlbumID WHERE"
+            "SELECT Name, Composer, Album.Title FROM Track "
+            "INNER JOIN Album ON Track.AlbumId = Album.AlbumId WHERE "
             "Track.Name LIKE '%' || :track_name || '%' AND "
-            "Track.Composer LIKE '%' || :track_composer || '%' AND"
+            "Track.Composer LIKE '%' || :track_composer || '%' AND "
             "Album.Title LIKE '%' || :album_title || '%'"
         )
 
